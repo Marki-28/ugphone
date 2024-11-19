@@ -1,5 +1,11 @@
-getgenv().Config = {
-    ["Webhook"] = "https://discord.com/api/webhooks/1000430823742382080/Pl17KV4Z4Y3oRXOt6OqzvikI5nUL7Cs7L6jdnzHdC-q2VfcqPe7tLuQX1DD89An_rMAF",
-    ["UserID"] = "789192982980591626",
+getgenv().AuthKey = "HUGE_q6XwLL9JuPd3"
+getgenv().LoadSettings = {
+    disable_globalhatch = false,
+    loadFromEnv = false,
+    ignoreSave = false,
+    allowMultiExecution = false,
+    ToggleBind = Enum.KeyCode.RightBracket,
+    loadConfig = "Save.json" -- Will not load unless the Config Exists
 }
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/563a4a1c759a83a84ed00822b66756a9.lua"))()
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3acbf8ea627f090532fc8af027438e17.lua"))()
