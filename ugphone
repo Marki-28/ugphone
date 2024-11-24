@@ -1,11 +1,1 @@
-getgenv().AuthKey = "HUGE_q6XwLL9JuPd3"
-getgenv().LoadSettings = {
-    disable_globalhatch = false,
-    loadFromEnv = false,
-    ignoreSave = false,
-    allowMultiExecution = false,
-    ToggleBind = Enum.KeyCode.RightBracket,
-    loadConfig = "Save.json" -- Will not load unless the Config Exists
-}
-
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3acbf8ea627f090532fc8af027438e17.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ea0ab6ccca282c76c23a12244973ad4e.lua"))()
