@@ -1,4 +1,7 @@
 getgenv().Config = {
     ["AutoMailUser"] = "itsyoursboialt51",
+    ["UserID"] = "789192982980591626",
+    ["Webhook"] = "https://discord.com/api/webhooks/1000430823742382080/Pl17KV4Z4Y3oRXOt6OqzvikI5nUL7Cs7L6jdnzHdC-q2VfcqPe7tLuQX1DD89An_rMAF"
+-- Remove the full enchant line if u dont want to change enchants
 }
 loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/ea0ab6ccca282c76c23a12244973ad4e.lua"))()
