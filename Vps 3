@@ -1,0 +1,47 @@
+script_key="OgaEWIaGTHxeqDNtPOehRWOQBbiRdgme";
+setfpscap(10)  -- number = fps
+
+getgenv().bgsInfConfig = {
+    AUTO_UPDATE_RESTART = true,
+    PURCHASE_ALIENSHOP = true,
+    PURCHASE_BLACKMARKET = true,
+    PURCHASE_STARSHOP_SLOT = 14,
+    PURCHASE_DICE_MERCHANT = true,
+    RESTOCK_SHOP = "Dice Merchant",
+
+    ADD_FRIEND = true,
+    MIN_COINS_BEFORE_HATCHING = 1000000000,
+    MIN_TICKETS_BEFORE_HATCHING = 1000000000,
+    IGNORE_STARTER_HATCH = false,
+    DO_BUBBLE_GUM = false,
+    MASTERY_PETS_LEVEL = 15,
+    MASTERY_BUFFS_LEVEL = 15,
+    MASTERY_SHOPS_LEVEL = 10,
+    IGNORE_EQUIP_BEST_PET = false,
+    USE_DICE_KEY = true,
+    USE_ROYAL_KEY = true,
+    IGNORE_MINIGAME = true,
+    USE_MYSTERY_BOX = true,
+
+    RARITY_TO_DELETE = {"Common", "Unique", "Rare", "Epic", "Legendary"},
+    DELETE_LEGENDARY_SHINY = true,
+    DELETE_LEGENDARY_MYTHIC = true,
+    LEGENDARY_TIER_TO_DELETE = 1,
+
+
+    ENCHANT_TEAMUP = true,
+    ENCHANT_TEAMUP_TIER = 5,
+    ENCHANT_SHINY_HIGHROLLER = true, 
+    -- (For Shiny pets, 2nd enchant)
+    -- (will use Reroll Orbs, if reroll orbs ran out it will stop)
+
+    RIFT_EGGS = {"Silly Egg", "Void Egg"},
+    HATCH_1X_EGG = {"200M Egg"},
+
+    WEBHOOK_URL = "https://discord.com/api/webhooks/971017276201504788/Z8YErd3GaU0hwU9jcxZHYqf_RAFqrr-B63w7mV3U_DxwOc7yVeC9N4fhSrlucKYND_G0",
+    DISCORD_ID = "789192982980591626",
+    WEBHOOK_ODDS = 1000000,
+    SHOW_PET_WEBHOOK_USERNAME = true,
+}
+
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e2d15fd8d5fd053a359cc3e296c68150.lua"))()
