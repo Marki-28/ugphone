@@ -24,17 +24,17 @@ getgenv().bgsInfConfig = {
     USE_MYSTERY_BOX = true,
     AUTO_BOUNTY_RIFT = true,
 
+    RARITY_TO_SHINY = {"Common", "Unique", "Rare", "Epic", "Legendary"},
     RARITY_TO_DELETE = {"Common", "Unique", "Rare", "Epic", "Legendary"},
+    PETS_TO_DELETE = {"Demonic Hydra"},
     DELETE_LEGENDARY_SHINY = true,
     DELETE_LEGENDARY_MYTHIC = true,
     LEGENDARY_TIER_TO_DELETE = 1,
 
-
+    USE_GEMS_ENCHANT = true,
     ENCHANT_TEAMUP = true,
     ENCHANT_TEAMUP_TIER = 5,
-    ENCHANT_SHINY_HIGHROLLER = true, 
-    -- (For Shiny pets, 2nd enchant)
-    -- (will use Reroll Orbs, if reroll orbs ran out it will stop)
+    ENCHANT_HIGH_ROLLER = true,
 
     RIFT_EGGS = {"Underworld Egg"},
     HATCH_1X_EGG = {"200M Egg"},
