@@ -36,7 +36,7 @@ getgenv().bgsInfConfig = {
     -- (For Shiny pets, 2nd enchant)
     -- (will use Reroll Orbs, if reroll orbs ran out it will stop)
 
-    RIFT_EGGS = {"Underworld Egg", "Nightmare Egg", "Cyber Egg"},
+    RIFT_EGGS = {"Underworld Egg"},
     HATCH_1X_EGG = {"200M Egg"},
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/971017276201504788/Z8YErd3GaU0hwU9jcxZHYqf_RAFqrr-B63w7mV3U_DxwOc7yVeC9N4fhSrlucKYND_G0",
