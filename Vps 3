@@ -2,7 +2,6 @@ script_key="OgaEWIaGTHxeqDNtPOehRWOQBbiRdgme";
 setfpscap(7)  -- number = fps
 
 getgenv().bgsInfConfig = {
-    SUMMER_EVENT = true,
     AUTO_UPDATE_RESTART = true,
     PURCHASE_ALIENSHOP = true,
     PURCHASE_BLACKMARKET = true,
@@ -38,10 +37,8 @@ getgenv().bgsInfConfig = {
     ENCHANT_TEAMUP_TIER = 5,
     ENCHANT_HIGH_ROLLER = true,
 
-    IGNORE_EVENT_STARTER_HATCH = false,
-    HATCH_1X_EGG = {"Fruit Egg"}, 
-    MIN_SEASHELLS_BEFORE_HATCHING = 50000000,
-    ALWAYS_INFINITY_ELIXIR = true,
+    RIFT_EGGS = {"Underworld Egg"},
+    HATCH_1X_EGG = {"Underworld Egg"}, 
 
     WEBHOOK_URL = "https://discord.com/api/webhooks/971017276201504788/Z8YErd3GaU0hwU9jcxZHYqf_RAFqrr-B63w7mV3U_DxwOc7yVeC9N4fhSrlucKYND_G0",
     DISCORD_ID = "789192982980591626",
