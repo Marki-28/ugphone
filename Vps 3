@@ -1,50 +1,83 @@
-script_key="OgaEWIaGTHxeqDNtPOehRWOQBbiRdgme";
-setfpscap(7)  -- number = fps
-
-getgenv().bgsInfConfig = {
-    SUMMER_EVENT = true,
+script_key="poabeiVqnUDBNFtXDlabwBmFMqnzecTo";
+getgenv().GAG2Config = {
+    FPS_CAP = 5,  -- MUST USE 5+ FPS FOR TWEENING
+    ADD_FRIEND = false,
     AUTO_UPDATE_RESTART = true,
-    PURCHASE_ALIENSHOP = true,
-    PURCHASE_BLACKMARKET = true,
-    PURCHASE_STARSHOP_SLOT = 14,
-    PURCHASE_DICE_MERCHANT = true,
-    RESTOCK_SHOP = "Dice Merchant",
+    COLLECT_FRUIT_DELAY = 20,
 
-    ADD_FRIEND = true,
-    MIN_COINS_BEFORE_HATCHING = 1000000000,
-    MIN_TICKETS_BEFORE_HATCHING = 1000000000,
-    IGNORE_STARTER_HATCH = false,
-    DO_BUBBLE_GUM = false,
-    MASTERY_PETS_LEVEL = 15,
-    MASTERY_BUFFS_LEVEL = 15,
-    MASTERY_SHOPS_LEVEL = 10,
-    IGNORE_EQUIP_BEST_PET = false,
-    USE_DICE_KEY = true,
-    USE_ROYAL_KEY = true,
-    IGNORE_MINIGAME = true,
-    USE_MYSTERY_BOX = true,
-    AUTO_COLLECT_WORLD_REWARDS = false,
+    BUY_PET = {  -- ["Pet Name"] = Amount
+        ["Raccoon"] = 99, 
+        ["Big Unicorn"] = 99,
+        ["Big Turtle"] = 99,
+        ["Huge Unicorn"] = 99,
+        ["Huge Turtle"] = 99,
+        ["Rainbow Unicorn"] = 99,
+        ["Rainbow Turtle"] = 99,
+        ["Big GoldenDragonfly"] = 99,
+        ["Huge GoldenDragonfly"] = 99,
+        ["Rainbow GoldenDragonfly"] = 99,
 
-    RARITY_TO_SHINY = {"Common", "Unique", "Rare", "Epic", "Legendary"},
-    RARITY_TO_DELETE = {"Common", "Unique", "Rare", "Epic", "Legendary"},
-    PETS_TO_DELETE = {"Demonic Hydra", "Crystal Unicorn", "Kiwi Dragon", "Inferno Cube"},
-    DELETE_LEGENDARY_SHINY = true,
-    DELETE_LEGENDARY_MYTHIC = true,
-    LEGENDARY_TIER_TO_DELETE = 1,
+        ["Bunny"] = 6,
+    },
 
-    USE_GEMS_ENCHANT = true,
-    ENCHANT_TEAMUP = true,
-    ENCHANT_TEAMUP_TIER = 5,
-    ENCHANT_HIGH_ROLLER = true,
+    EQUIP_PET = {  -- {"Pet Name", Amount to Equip, Priority}
+        {"Bunny", 6, 1},
+    },
 
-    AUTO_BOUNTY_RIFT = false,
-    HATCH_1X_EGG = {"Fossil Egg"}, 
-    ALWAYS_INFINITY_ELIXIR = true,
+    PLANT_SEED = {  -- ["Seed Name"] = Amount
+        ["Bamboo"] = 400,
+        ["Mushroom"] = 400,
+        ["Green Bean"] = 200,
+        ["Venus Fly Trap"] = 5,
+        ["Venom Spitter"] = 5,
+    },
 
-    WEBHOOK_URL = "https://discord.com/api/webhooks/971017276201504788/Z8YErd3GaU0hwU9jcxZHYqf_RAFqrr-B63w7mV3U_DxwOc7yVeC9N4fhSrlucKYND_G0",
-    DISCORD_ID = "789192982980591626",
-    WEBHOOK_ODDS = 1000000,
-    SHOW_PET_WEBHOOK_USERNAME = true,
+    BUY_SEED = {  -- ["Seed Name"] = Amount
+        ["Carrot"] = 99999, 
+        ["Bamboo"] = 9999,
+        ["Mushroom"] = 9999,
+        ["Green Bean"] = 9999,
+        ["Venus Fly Trap"] = 9999,
+        ["Venom Spitter"] = 1,
+        ["Moon Bloom"] = 1,
+        ["Hypno Bloom"] = 1,
+        ["Dragon's Breath"] = 9999,
+    },
+
+    SELL_FRUIT_MULTIPLIER = { ["Bamboo"] = 1, ["Mushroom"] = 1.5, ["Moon Bloom"] = 4, ["Dragon's Breath"] = 4, ["Venus Fly Trap"] = 4, ["Venom Spitter"] = 4}, 
+    COLLECT_PLANT_IF_MUTATED = { "Bamboo", "Mushroom", "Green Bean", "Moon Bloom", "Dragon's Breath", "Venom Spitter", "Venus Fly Trap"},  -- Only collect fruit when have ANY mutation
+    FAVOURITE_FRUIT = {},  -- ["Fruit Name"] = {} ... or ... ["Fruit Name"] = { "Gold", "Rainbow" }
+	SELL_ALL_DAILY_DEAL = 100000000,  -- Min "daily sell all" value
+    SELL_ALL_DELAY = 10,    
+
+	FOCUS_COLLECT_DROPPED_SEED = true,  -- set true if public server (instant collect), false for slightly slower collect
+    MAX_PET_EQUIP = 6,
+    BUY_GEAR_MIN_SHECKLE = 1000000, 
+    EXPAND_PLOT = 2,  -- 0 = No expand, 3 = expand plot 3 times
+    USE_SPRINKLER = {"Common sprinkler"},  -- "Sprinkler Name"
+
+    BUY_GEAR = {  -- ["Gear Name"] = Amount
+        ["Super Watering Can"] = 9999,
+        ["Super Sprinkler"] = 9999,
+        ["Trowel"] = 9999,
+        ["Legendary Sprinkler"] = 9999,
+    },  
+    BUY_CRATE = {},  -- ["Crate Name"] = Amount
+
+	AUTO_MAIL_DELAY = 60,
+    AUTO_MAIL = {    ["zyzyx1213"] = {["Mega"] = "All", ["Legendary Sprinkler"] = 5, ["Super Sprinkler"] = 2, ["Super Watering Can"] = 2, ["Unicorn"] = 1, ["Raccoon"] = 1, ["Hypno Bloom"] = 1, ["Dragon's Breath"] = 1, ["Moon Bloom"] = 1},
+    			["Y4as0"] = { ["Trowel"] = 99}, ["Carrot"] = 500},  -- ["Username"] = { ["Item Name"] = Amount }
+    COLLECT_MAIL = true,
+
+    -- Discord
+    WEBHOOK_PET_NAME = {"Marki"},
+    WEBHOOK_PET_RARITY = { "Mythic", "Super", "Secret" },
+    WEBHOOK_URL = "https://discord.com/api/webhooks/1464651600755691692/WO6NAfMhd_LB_JbyZksK3RNitjnjJ4xREbXtqWEbAIlHtHKwvdJLZmCBcF5U0ilzVf26",
+    DISCORD_ID = "",
+    WEBHOOK_NOTE = "",  -- Private Webhook
+    SHOW_PUBLIC_DISCORD_ID = true,
+    SHOW_WEBHOOK_USERNAME = true,  -- Private Webhook
+    SHOW_WEBHOOK_JOBID = true,  -- Private Webhook
 }
 
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/e2d15fd8d5fd053a359cc3e296c68150.lua"))()
+loadstring(game:HttpGet("https://api.luarmor.net/files/v4/loaders/c9ea3aa6c782de82dee4bcf6b9a9d03e.lua"))()
