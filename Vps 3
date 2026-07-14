@@ -34,6 +34,7 @@ getgenv().GAG2Config = {
 
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
         ["Rocket Pop"] = 9999,
+        ["Sun Bloom"] = 1,
         ["Dragon's Breath"] = 9999,
         ["Star Fruit"] = 9999,
     },
