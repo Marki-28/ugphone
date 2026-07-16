@@ -35,7 +35,10 @@ getgenv().GAG2Config = {
 
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
         ["Rocket Pop"] = 9999,
+        ["Moon Bloom"] = 1,
         ["Sun Bloom"] = 1,
+        ["Hypno Bloom"] = 1,
+        ["Dragon's Breath"] = 9999,
         ["Star Fruit"] = 9999,
     },
 
@@ -61,7 +64,7 @@ getgenv().GAG2Config = {
     BUY_CRATE = {},  -- ["Crate Name"] = Amount
 
 	AUTO_MAIL_DELAY = 60,
-    AUTO_MAIL = {    ["zyzyx1213"] = {["Sun Bloom"] = "All", ["Fire Fly"] = "All", ["Star Fruit"] = "All", ["Rocket Pop"] = "All", ["Rainbow"] = "All", ["Gold"] = "All", ["Mega"] = "All", ["Legendary Sprinkler"] = 15, ["Super Sprinkler"] = 2, ["Super Watering Can"] = 2, ["Unicorn"] = 1, ["Raccoon"] = 1, ["Hypno Bloom"] = 1, ["Dragon's Breath"] = 1, ["Moon Bloom"] = 1},
+    AUTO_MAIL = {    ["zyzyx1213"] = {["Sun Bloom"] = "All", ["Fire Fly"] = "1", ["Star Fruit"] = "All", ["Rocket Pop"] = "All", ["Rainbow"] = "All", ["Gold"] = "All", ["Mega"] = "All", ["Legendary Sprinkler"] = 15, ["Super Sprinkler"] = 2, ["Super Watering Can"] = 2, ["Unicorn"] = 1, ["Raccoon"] = 1, ["Hypno Bloom"] = 1, ["Dragon's Breath"] = 1, ["Moon Bloom"] = 1},
     			["Y4as0"] = { ["Trowel"] = 99 }
 	},
     COLLECT_MAIL = true,
