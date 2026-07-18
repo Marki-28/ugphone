@@ -22,11 +22,12 @@ getgenv().GAG2Config = {
     -- Buy Config
     BUY_SEED = {  -- ["Seed Name"] = Buy Until Amount
         ["Rocket Pop"]      = 9999,
-        ["Moon Bloom"]      = 1,
-        ["Sun Bloom"]       = 1,
-        ["Hypno Bloom"]     = 1,
+        ["Moon Bloom"]      = 999,
+        ["Sun Bloom"]       = 999,
+        ["Hypno Bloom"]     = 9999,
         ["Dragon's Breath"] = 9999,
         ["Star Fruit"]      = 9999,
+        ["Bamboo"]      = 99999,
     },
 
     BUY_AUCTION = {},  -- ["Item Name"] = {Maximum Sheckle Price, Buy Until Amount}
@@ -72,7 +73,7 @@ getgenv().GAG2Config = {
     EXPAND_PLOT = 2,  -- 0 = Do Not Expand, 3 = Expand Plot 3 Times
 
     -- Auto Mail Config
-    AUTO_MAIL_DELAY = 60,  -- Seconds
+    AUTO_MAIL_DELAY = 500,  -- Seconds
     AUTO_MAIL = {
         ["zyzyx1213"] = {
             ["Sun Bloom"]            = "All",
@@ -90,6 +91,7 @@ getgenv().GAG2Config = {
             ["Hypno Bloom"]          = "All",
             ["Dragon's Breath"]      = "All",
             ["Moon Bloom"]           = "All"
+            ["Bamboo"]               = "5000"
         },
         
         ["Y4as0"] = {
