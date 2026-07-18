@@ -1,5 +1,4 @@
 script_key="poabeiVqnUDBNFtXDlabwBmFMqnzecTo";
-
 getgenv().GAG2Config = {
     FPS_CAP = 5,  -- MUST USE 5+ FPS
     ADD_FRIEND = false,
@@ -27,7 +26,7 @@ getgenv().GAG2Config = {
         ["Hypno Bloom"]     = 9999,
         ["Dragon's Breath"] = 9999,
         ["Star Fruit"]      = 9999,
-        ["Bamboo"]      = 99999,
+        ["Bamboo"]          = 99999,
     },
 
     BUY_AUCTION = {},  -- ["Item Name"] = {Maximum Sheckle Price, Buy Until Amount}
@@ -77,7 +76,7 @@ getgenv().GAG2Config = {
     AUTO_MAIL = {
         ["zyzyx1213"] = {
             ["Sun Bloom"]            = "All",
-            ["FireFly"]             = 1,
+            ["FireFly"]              = 1,
             ["Star Fruit"]           = "All",
             ["Rocket Pop"]           = "All",
             ["Rainbow"]              = "All",
@@ -90,7 +89,7 @@ getgenv().GAG2Config = {
             ["Raccoon"]              = 1,
             ["Hypno Bloom"]          = "All",
             ["Dragon's Breath"]      = "All",
-            ["Moon Bloom"]           = "All"
+            ["Moon Bloom"]           = "All",
             ["Bamboo"]               = "5000"
         },
         
