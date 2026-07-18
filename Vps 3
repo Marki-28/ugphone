@@ -103,9 +103,9 @@ getgenv().GAG2Config = {
             ["FireFly"]              = 1,
             ["Star Fruit"]           = "All",
             ["Rocket Pop"]           = "All",
-            ["Rainbow"]              = "All",
-            ["Gold"]                 = "All",
-            ["Mega"]                 = "All",
+            ["Rainbow"]              = 25,
+            ["Gold"]                 = 25,
+            ["Mega"]                 = 10,
             ["Legendary Sprinkler"]  = 10,
             ["Super Sprinkler"]      = 3,
             ["Super Watering Can"]   = 3,
@@ -114,7 +114,6 @@ getgenv().GAG2Config = {
             ["Hypno Bloom"]          = "All",
             ["Dragon's Breath"]      = "All",
             ["Moon Bloom"]           = "All",
-            ["Acorn"]               = "All",
             ["Bamboo"]               = 1000
         },
         
